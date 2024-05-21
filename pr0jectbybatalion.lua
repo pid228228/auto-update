@@ -10,7 +10,7 @@ local script_vers_text = "v1.0" -- Название нашей версии. В 
 local update_url = 'https://raw.githubusercontent.com/pid228228/auto-update/main/update.ini' -- Путь к ini файлу. Позже нам понадобиться.
 local update_path = getWorkingDirectory() .. "/update.ini"
 
-local script_url = '' -- Путь скрипту.
+local script_url = 'https://raw.githubusercontent.com/pid228228/auto-update/main/pr0jectbybatalion.lua' -- Путь скрипту.
 local script_path = thisScript().path
 function check_update() -- Создаём функцию которая будет проверять наличие обновлений при запуске скрипта.
     downloadUrlToFile(update_url, update_path, function(id, status)
